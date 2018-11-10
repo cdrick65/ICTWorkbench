@@ -8,5 +8,5 @@ ICTT Practical - lecture at Ecole Nationale d'Ingénrieurs de Tarbes
 Class {
 	#name : #ManifestICTWorkbench,
 	#superclass : #PackageManifest,
-	#category : #'2018-ICTWorkbench-Manifest'
+	#category : #'ICTWorkbench-Manifest'
 }
