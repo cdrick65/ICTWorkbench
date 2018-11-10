@@ -1,1 +1,1 @@
-Package { #name : #'2018-ICTWorkbench' }
+Package { #name : #'ICTWorkbench' }
