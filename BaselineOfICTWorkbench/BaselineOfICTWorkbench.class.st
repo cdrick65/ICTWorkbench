@@ -36,8 +36,33 @@ BaselineOfICTWorkbench >> baseline: spec [
 		spec
     		baseline: 'PolyMath'
     		with: [ spec repository: 'github://PolyMathOrg/PolyMath:master/src' ].
+		
+		spec
+			project: 'Teapot'  
+			with: [ spec
+						className: #ConfigurationOfTeapot;
+						versionString: #stable;
+						repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main'  ].
+		
+		spec
+			project: 'XMLParserHTML'  
+			with: [ spec
+						className: #ConfigurationOfXMLParserHTML;
+						versionString: #stable;
+						repository: 'http://smalltalkhub.com/mc/PharoExtras/XMLParserHTML/main'  ].			
+		spec
+			project: 'XPath'
+			with: [ spec
+						className: #ConfigurationOfXPath;
+						versionString: #stable;
+						repository: 'http://smalltalkhub.com/mc/PharoExtras/XPath/main/' ].
+		spec
+			baseline: 'ZTimestamp'
+			with: [ spec repository: 'github://svenvc/ztimestamp:master/src'].
+		
+		
 		spec 
 			package: 'ICTWorkbench'	with:
-					[ spec requires: #('PolyMath') ]
+					[ spec requires: #('PolyMath' 'Teapot' 'XMLParserHTML' 'XPath' 'ZTimestamp') ]
 		]
 ]
