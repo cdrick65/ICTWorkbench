@@ -1,1 +1,1 @@
-Package { #name : #'ICTWorkbench' }
+Package { #name : #ICTWorkbench }

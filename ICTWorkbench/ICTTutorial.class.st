@@ -24,7 +24,7 @@ ${example:name=ICTTutorial>>#newClient2}$
 Class {
 	#name : #ICTTutorial,
 	#superclass : #Object,
-	#category : #'ICTWorkbench'
+	#category : #ICTWorkbench
 }
 
 { #category : #'examples-url' }

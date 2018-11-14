@@ -1,5 +1,5 @@
 Class {
-	#name : #ICTSvenHTTPPresentation,
+	#name : #ICTTutorial2URL,
 	#superclass : #ICTTutorial,
 	#category : #ICTWorkbench
 }
