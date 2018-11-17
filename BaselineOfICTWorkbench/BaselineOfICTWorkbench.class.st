@@ -87,8 +87,18 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depProject: 'XMLParserHTML' smalltalkhubAccount: 'PharoExtras'.
 	self addTo: aSpec depProject: 'XPath' smalltalkhubAccount: 'PharoExtras'.
 	
+	self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal2' baseline: 'Roassal2' branch: 'master/src'.
+	"Bloc Brick PetitParser Glamourous"
+	self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'.
+
 	"warning missing dependancy => AnimatedGIFReadWriter"
-	self addTo: aSpec depGithubProject: 'JurajKubelka/DiscordSt' baseline: 'DiscordSt' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'JurajKubelka/DiscordSt' baseline: 'DiscordSt' branch: 'master/src'."
+	
+	"pharo-ide/TelePharo"
+	
+	"QRCode Tabular DataFrame NetworkExtra + Beacon + SSDP
+	Pldependant : pillar ? OSSubpro Telepharo ? OSes (5) "
+	
 	
 	self addTo: aSpec depGithubProject: 'pillar-markup/pillar' baseline: 'Pillar' branch: 'master/src'.
 	"OSSubprocess  and mustache detached heads => try loading mustach and OSSub before Pillar"
@@ -105,16 +115,10 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depGithubProject: 'svenvc/NeoJSON' baseline: 'NeoJSON' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/NeoCSV' baseline: 'NeoCSV' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ston' baseline: 'Ston' branch: 'master/src'.
+	
+	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'Pharo-Web-Browser' branch: 'master/src'.
 "
-		
-		spec
-			project: 'Teapot'  
-			with: [ spec
-						className: #ConfigurationOfTeapot;
-						versionString: #stable;
-						repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main'  ].
-					
-		spec
+	spec
 			project: 'SSDP'  
 			with: [ spec
 						versionString: #stable;

@@ -1,5 +1,5 @@
 Class {
 	#name : #ICTTutorial2URL,
 	#superclass : #ICTTutorial,
-	#category : #ICTWorkbench
+	#category : #'ICTWorkbench-Tutorials'
 }
