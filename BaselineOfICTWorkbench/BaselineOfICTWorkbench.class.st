@@ -79,7 +79,11 @@ BaselineOfICTWorkbench >> customProjectAttributes [
 
 { #category : #'baseline-dependance' }
 BaselineOfICTWorkbench >> dependanciesFor: aSpec [
-"aSpec => aMetacelloBaselineConstructor"
+
+	"Bloc Brick PetitParser Glamourous"
+	self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'.
+
+	"aSpec => aMetacelloBaselineConstructor"
 	self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ztimestamp' baseline: 'ZTimestamp' branch: 'master/src'.
 	self addTo: aSpec depProject: 'Teapot' smalltalkhubAccount: 'zeroflag'.  
@@ -88,8 +92,6 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depProject: 'XPath' smalltalkhubAccount: 'PharoExtras'.
 	
 	self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal2' baseline: 'Roassal2' branch: 'master/src'.
-	"Bloc Brick PetitParser Glamourous"
-	self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'.
 
 	"warning missing dependancy => AnimatedGIFReadWriter"
 	"self addTo: aSpec depGithubProject: 'JurajKubelka/DiscordSt' baseline: 'DiscordSt' branch: 'master/src'."
@@ -100,9 +102,11 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	Pldependant : pillar ? OSSubpro Telepharo ? OSes (5) "
 	
 	
-	self addTo: aSpec depGithubProject: 'pillar-markup/pillar' baseline: 'Pillar' branch: 'master/src'.
+	
 	"OSSubprocess  and mustache detached heads => try loading mustach and OSSub before Pillar"
-	self addTo: aSpec depGithubProject: 'noha/mustache' baseline: 'Mustache' branch: 'master/src'.
+	
+	"done by GToolkit"
+	"self addTo: aSpec depGithubProject: 'noha/mustache' baseline: 'Mustache' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'noha/geo-json' baseline: 'GeoJSON' branch: 'master/src'.
 	"baseline: 'ExternalWebBrowser'; ""noha/JSONWebToken:master/source
 	repository: 'github://seandenigris/Pharo-Web-Browser:master/repository';"
@@ -112,21 +116,24 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	
 	self addTo: aSpec depGithubProject: 'PolyMathOrg/PolyMath' baseline: 'PolyMath' branch: 'master/src'.
 	
+	""
+	
 	self addTo: aSpec depGithubProject: 'svenvc/NeoJSON' baseline: 'NeoJSON' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/NeoCSV' baseline: 'NeoCSV' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ston' baseline: 'Ston' branch: 'master/src'.
 	
-	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'Pharo-Web-Browser' branch: 'master/src'.
+	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'ExternalWebBrowser' branch: 'master/src'.
+"
+self addTo: aSpec depGithubProject: 'pillar-markup/pillar' baseline: 'Pillar' branch: 'master/src'."
+
+
 "
 	spec
 			project: 'SSDP'  
 			with: [ spec
 						versionString: #stable;
 						repository: 'http://smalltalkhub.com/mc/henriksp/SSDP/main'  ].
-					
-		spec
-			baseline: 'ExternalWebBrowser'
-			with: [ spec repository: 'github://seandenigris/Pharo-Web-Browser:master/repository']."
+"
 		
 ]
 

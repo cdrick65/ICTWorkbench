@@ -108,7 +108,7 @@ ICTTutorial >> newClientNotFound [
 ICTTutorial >> newUrl1 [
 <gtExample>
 
-	^ 'http://www.monip.fr' asUrl.
+	^ 'http://www.monip.fr:8080/service?q=search%20test&id=23' asUrl.
 
 
 ]
