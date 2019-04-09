@@ -5,7 +5,10 @@ SmalltalkCISpec {
       #onConflict : #useIncoming,
       #onUpgrade : #useIncoming,
 	    #ignoreImage : true,
-      #platforms : [ #pharo ]
+      #platforms : [ #pharo ],
+      #testing : {
+            #failOnZeroTests : false
+      }
     }
   ]
 }
