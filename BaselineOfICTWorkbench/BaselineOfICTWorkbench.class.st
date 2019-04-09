@@ -84,7 +84,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	"self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'kursjan/petitparser2' baseline: 'PetitParser2' branch: 'master/src'.
 
-	self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'svenvc/ztimestamp' baseline: 'ZTimestamp' branch: 'master/src'.
 	self addTo: aSpec depProject: 'Teapot' smalltalkhubAccount: 'zeroflag'.  
 	"little pb here with Teapo => conflicting with JSON and also use Spec deprecated classes"
@@ -139,9 +139,9 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 
 	
 	"jecisc/FlagBrowser"
-	self addTo: aSpec depGithubProject: 'jecisc/FlagBrowser' baseline: 'FlagBrowser' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'jecisc/FlagBrowser' baseline: 'FlagBrowser' branch: 'master/src'."
 	"jecisc/pharo-scripts"
-	self addTo: aSpec depGithubProject: 'jecisc/pharo-scripts' baseline: 'PharoSettings' branch: 'master/src/settings'.
+	"self addTo: aSpec depGithubProject: 'jecisc/pharo-scripts' baseline: 'PharoSettings' branch: 'master/src/settings'."
 	
 	
 	
