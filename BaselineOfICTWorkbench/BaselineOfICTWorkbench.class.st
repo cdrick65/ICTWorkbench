@@ -81,9 +81,9 @@ BaselineOfICTWorkbench >> customProjectAttributes [
 BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 
 	"Bloc Brick PetitParser Glamourous"
-	self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'."
+	self addTo: aSpec depGithubProject: 'kursjan/petitparser2' baseline: 'PetitParser2' branch: 'master/src'.
 
-	"aSpec => aMetacelloBaselineConstructor"
 	self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ztimestamp' baseline: 'ZTimestamp' branch: 'master/src'.
 	self addTo: aSpec depProject: 'Teapot' smalltalkhubAccount: 'zeroflag'.  
@@ -91,7 +91,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depProject: 'XMLParserHTML' smalltalkhubAccount: 'PharoExtras'.
 	self addTo: aSpec depProject: 'XPath' smalltalkhubAccount: 'PharoExtras'.
 	
-	self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal2' baseline: 'Roassal2' branch: 'master/src'.
+	self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal3' baseline: 'Roassal3' branch: 'master/src'.
 
 	"warning missing dependancy => AnimatedGIFReadWriter"
 	"self addTo: aSpec depGithubProject: 'JurajKubelka/DiscordSt' baseline: 'DiscordSt' branch: 'master/src'."
@@ -112,6 +112,13 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	repository: 'github://seandenigris/Pharo-Web-Browser:master/repository';"
 	
 	self addTo: aSpec depGithubProject: 'pharo-spec/Spec' baseline: 'Spec' branch: 'master/src'.
+	" Metacello new
+        githubUser: 'pharo-spec' project: 'Spec' commitish: 'master' path: 'src';
+        baseline: 'Spec';
+        onConflict: [ :e | e useIncoming ];
+        onUpgrade: [ :e | e useIncoming ];
+        ignoreImage;
+        load"
 	self addTo: aSpec depGithubProject: 'pharo-contributions/Cryptography' baseline: 'Cryptography' branch: 'master/src'.
 	
 	self addTo: aSpec depGithubProject: 'PolyMathOrg/PolyMath' baseline: 'PolyMath' branch: 'master/src'.
@@ -123,18 +130,20 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depGithubProject: 'svenvc/ston' baseline: 'Ston' branch: 'master/src'.
 	
 	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'ExternalWebBrowser' branch: 'master/src'.
-"
-self addTo: aSpec depGithubProject: 'pillar-markup/pillar' baseline: 'Pillar' branch: 'master/src'."
+	
+	self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'IMAPClient' branch: 'master/src'.
+	self addTo: aSpec depGithubProject: 'skaplar/NewWave' baseline: 'NewWave' branch: 'master/src'.
+	
+	self addTo: aSpec depGithubProject: 'rydier/SSDP' baseline: 'SSDP' branch: 'master/repository'.
 
-
-"
-	spec
-			project: 'SSDP'  
-			with: [ spec
-						versionString: #stable;
-						repository: 'http://smalltalkhub.com/mc/henriksp/SSDP/main'  ].
-"
-		
+	
+	"jecisc/FlagBrowser"
+	self addTo: aSpec depGithubProject: 'jecisc/FlagBrowser' baseline: 'FlagBrowser' branch: 'master/src'.
+	"jecisc/pharo-scripts"
+	self addTo: aSpec depGithubProject: 'jecisc/pharo-scripts' baseline: 'pharo-scripts' branch: 'master/src'.
+	
+	
+	
 ]
 
 { #category : #baselines }
