@@ -82,7 +82,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 
 	"Bloc Brick PetitParser Glamourous"
 	"self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'."
-	self addTo: aSpec depGithubProject: 'kursjan/petitparser2' baseline: 'PetitParser2' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'kursjan/petitparser2' baseline: 'PetitParser2' branch: 'master/src'."
 
 	"self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'svenvc/ztimestamp' baseline: 'ZTimestamp' branch: 'master/src'.
@@ -91,7 +91,9 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depProject: 'XMLParserHTML' smalltalkhubAccount: 'PharoExtras'.
 	self addTo: aSpec depProject: 'XPath' smalltalkhubAccount: 'PharoExtras'.
 	
-	self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal3' baseline: 'Roassal3' branch: 'master/src'.
+	"QRCode"
+	self addTo: aSpec depProject: 'JochenRick' smalltalkhubAccount: 'QRCode'. 
+	"self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal3' baseline: 'Roassal3' branch: 'master/src'."
 
 	"warning missing dependancy => AnimatedGIFReadWriter"
 	"self addTo: aSpec depGithubProject: 'JurajKubelka/DiscordSt' baseline: 'DiscordSt' branch: 'master/src'."
@@ -106,7 +108,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	"OSSubprocess  and mustache detached heads => try loading mustach and OSSub before Pillar"
 	
 	"done by GToolkit"
-	"self addTo: aSpec depGithubProject: 'noha/mustache' baseline: 'Mustache' branch: 'master/src'."
+	self addTo: aSpec depGithubProject: 'noha/mustache' baseline: 'Mustache' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'noha/geo-json' baseline: 'GeoJSON' branch: 'master/src'.
 	"baseline: 'ExternalWebBrowser'; ""noha/JSONWebToken:master/source
 	repository: 'github://seandenigris/Pharo-Web-Browser:master/repository';"
@@ -129,13 +131,13 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depGithubProject: 'svenvc/NeoCSV' baseline: 'NeoCSV' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ston' baseline: 'Ston' branch: 'master/src'.
 	
-	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'ExternalWebBrowser' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'ExternalWebBrowser' branch: 'master/src'."
 	
-	"self addTo: aSpec depGithubProject: 'dionisiydk/Mocketry' baseline: 'Mocketry' branch: 'master/src'.
-	self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'ImapClient' branch: 'master/src'."
+	"self addTo: aSpec depGithubProject: 'dionisiydk/Mocketry' baseline: 'Mocketry' branch: 'master/src'."
+	"self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'ImapClient' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'skaplar/NewWave' baseline: 'NewWave' branch: 'master/src'.
 	
-	self addTo: aSpec depGithubProject: 'rydier/SSDP' baseline: 'SSDP' branch: 'master/repository'.
+	"self addTo: aSpec depGithubProject: 'rydier/SSDP' baseline: 'SSDP' branch: 'master/repository'."
 
 	
 	"jecisc/FlagBrowser"
