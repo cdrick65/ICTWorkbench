@@ -131,7 +131,8 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	
 	self addTo: aSpec depGithubProject: 'seandenigris/Pharo-Web-Browser' baseline: 'ExternalWebBrowser' branch: 'master/src'.
 	
-	self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'IMAPClient' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'dionisiydk/Mocketry' baseline: 'Mocketry' branch: 'master/src'.
+	self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'ImapClient' branch: 'master/src'."
 	self addTo: aSpec depGithubProject: 'skaplar/NewWave' baseline: 'NewWave' branch: 'master/src'.
 	
 	self addTo: aSpec depGithubProject: 'rydier/SSDP' baseline: 'SSDP' branch: 'master/repository'.
@@ -140,7 +141,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	"jecisc/FlagBrowser"
 	self addTo: aSpec depGithubProject: 'jecisc/FlagBrowser' baseline: 'FlagBrowser' branch: 'master/src'.
 	"jecisc/pharo-scripts"
-	self addTo: aSpec depGithubProject: 'jecisc/pharo-scripts' baseline: 'pharo-scripts' branch: 'master/src'.
+	self addTo: aSpec depGithubProject: 'jecisc/pharo-scripts' baseline: 'PharoSettings' branch: 'master/src/settings'.
 	
 	
 	
