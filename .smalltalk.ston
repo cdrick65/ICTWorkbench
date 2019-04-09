@@ -6,9 +6,12 @@ SmalltalkCISpec {
       #onUpgrade : #useIncoming,
 	    #ignoreImage : true,
       #platforms : [ #pharo ],
-      #testing : {
-            #failOnZeroTests : false
-      }
     }
-  ]
+  ],
+  #testing : {
+            #failOnZeroTests : false
+	    //#allTestCases : true // Run all TestCases in image
+    	// Define TestCases explicitly
+    	    //#classes : [ #MyProjectTestCase ]
+  }
 }
