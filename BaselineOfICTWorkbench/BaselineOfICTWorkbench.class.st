@@ -111,7 +111,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	"baseline: 'ExternalWebBrowser'; ""noha/JSONWebToken:master/source
 	repository: 'github://seandenigris/Pharo-Web-Browser:master/repository';"
 	
-	self addTo: aSpec depGithubProject: 'pharo-spec/Spec' baseline: 'Spec' branch: 'master/src'.
+	"self addTo: aSpec depGithubProject: 'pharo-spec/Spec' baseline: 'Spec' branch: 'master/src'."
 	" Metacello new
         githubUser: 'pharo-spec' project: 'Spec' commitish: 'master' path: 'src';
         baseline: 'Spec';
