@@ -80,11 +80,13 @@ BaselineOfICTWorkbench >> customProjectAttributes [
 { #category : #'baseline-dependance' }
 BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 
+	self addTo: aSpec depGithubProject: 'skaplar/NewWave' baseline: 'NewWave' branch: 'master/src'.
+
 	"Bloc Brick PetitParser Glamourous"
 	"self addTo: aSpec depGithubProject: 'feenkcom/gtoolkit' baseline: 'GToolkit' branch: 'master/src'."
 	"self addTo: aSpec depGithubProject: 'kursjan/petitparser2' baseline: 'PetitParser2' branch: 'master/src'."
 
-	"self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'."
+	self addTo: aSpec depGithubProject: 'svenvc/zinc' baseline: 'ZincHTTPComponents' branch: 'master/src'.
 	self addTo: aSpec depGithubProject: 'svenvc/ztimestamp' baseline: 'ZTimestamp' branch: 'master/src'.
 	self addTo: aSpec depProject: 'Teapot' smalltalkhubAccount: 'zeroflag'.  
 	"little pb here with Teapo => conflicting with JSON and also use Spec deprecated classes"
@@ -92,7 +94,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	self addTo: aSpec depProject: 'XPath' smalltalkhubAccount: 'PharoExtras'.
 	
 	"QRCode"
-	self addTo: aSpec depProject: 'JochenRick' smalltalkhubAccount: 'QRCode'. 
+	"self addTo: aSpec depProject: 'QRCode' smalltalkhubAccount: 'JochenRick'." 
 	"self addTo: aSpec depGithubProject: 'ObjectProfile/Roassal3' baseline: 'Roassal3' branch: 'master/src'."
 
 	"warning missing dependancy => AnimatedGIFReadWriter"
@@ -135,7 +137,7 @@ BaselineOfICTWorkbench >> dependanciesFor: aSpec [
 	
 	"self addTo: aSpec depGithubProject: 'dionisiydk/Mocketry' baseline: 'Mocketry' branch: 'master/src'."
 	"self addTo: aSpec depGithubProject: 'VincentBlondeau/IMAPClient' baseline: 'ImapClient' branch: 'master/src'."
-	self addTo: aSpec depGithubProject: 'skaplar/NewWave' baseline: 'NewWave' branch: 'master/src'.
+
 	
 	"self addTo: aSpec depGithubProject: 'rydier/SSDP' baseline: 'SSDP' branch: 'master/repository'."
 
