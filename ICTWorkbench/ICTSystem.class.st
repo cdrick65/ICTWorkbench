@@ -52,6 +52,42 @@ ICTSystem class >> installQRCode [
 ]
 
 { #category : #'as yet unclassified' }
+ICTSystem class >> installRoassal3 [
+	| tmp2 |
+	tmp2 := Metacello new.
+	tmp2
+		baseline: 'Roassal3';
+		repository: 'github://ObjectProfile/Roassal3/src';
+		load
+]
+
+{ #category : #'as yet unclassified' }
+ICTSystem class >> installSmartData [
+
+
+
+	
+]
+
+{ #category : #'as yet unclassified' }
+ICTSystem class >> installWooden3D [
+	EpMonitor current disable.
+	[ | tmp2 |
+	tmp2 := Metacello new.
+	tmp2
+		baseline: 'WodenEngine';
+		repository: 'github://ronsaldo/woden/tonel';
+		onConflict: [ :arg1 | 
+			self halt.
+			arg1 useIncoming ];
+		onUpgrade: [ :arg2 | 
+			self halt.
+			arg2 useIncoming ];
+		load ]
+		ensure: [ EpMonitor current enable ]
+]
+
+{ #category : #'as yet unclassified' }
 ICTSystem class >> usefulCommands [
 
 	MetacelloToolBox validateBaseline: BaselineOfICTWorkbench.
